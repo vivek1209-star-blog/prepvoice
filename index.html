@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f3ed" />
+    <meta name="description" content="Voice-powered MERN interview prep: speak a question, get a short answer, practice speaking with clean recording." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>PrepVoice · MERN Interview Prep</title>
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem("prepvoice:v1") || "{}"), p = s.prefs || {}, t = p.theme || s.theme || "auto";
+        if (t === "auto") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var h = document.documentElement;
+        h.dataset.theme = t; h.dataset.font = p.font || "lexend"; h.dataset.size = p.size || "m";
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
