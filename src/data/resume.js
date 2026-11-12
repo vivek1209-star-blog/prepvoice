@@ -2,7 +2,7 @@
 const E = (q, tags, a, hi, x = {}) => ({ q, tags, a, hi, ...x });
 
 export default [
-  E("Tell me about yourself.", ["tell me about yourself", "introduce yourself", "introduction", "intro", "about yourself"],
+  E("Tell me about yourself (MERN / React).", ["tell me about yourself mern", "intro mern", "introduce yourself react"],
     "Hi, I'm Vivek Mishra. I have over four years of experience as a Full-Stack MERN developer. I started at Code B, then worked at Boldsoftmation and Adecco. Currently, I'm at Champion Software Technologies, working on MasterPe. Before that, I worked on 360Pass, a society management platform, and a BBPS bill-payment platform. I work across the full stack: React and Redux on the frontend, and Node.js, Express, MongoDB and MySQL on the backend. Now I'm looking to grow on bigger projects.",
     "Naam → experience → companies → current project → stack → kyun change. 60 second."),
 

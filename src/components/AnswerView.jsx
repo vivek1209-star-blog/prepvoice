@@ -96,6 +96,10 @@ export default function AnswerView({ item, progress, compact = false, query = ""
         </div>
       )}
 
+      {item.dia && (
+        <pre className="scroll-thin mt-3 overflow-x-auto rounded-2xl border border-line bg-surface p-4 font-mono text-[12.5px] leading-6 text-ink/90">{item.dia}</pre>
+      )}
+
       {tabs && (
         <section className="mt-6">
           <SectionLabel icon={Code2}>{item.type === "program" ? (tabs.length > 1 ? `Program · ${tabs.length} ways (tabs badlo)` : "Program") : "Code example"}</SectionLabel>

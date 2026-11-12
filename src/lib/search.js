@@ -47,6 +47,7 @@ export function clean(normalized) {
 }
 
 const hasPhrase = (hay, needle) => needle && (` ${hay} `).includes(` ${needle} `);
+const CAT_HINTS = [["angular", "angular"], ["rxjs", "angular"], ["typescript", "angular"], ["react", "react"], ["node", "node"], ["express", "node"], ["mongodb", "node"], ["mysql", "sql"], ["sql", "sql"], ["sequelize", "sql"]];
 const DIFF_RE = /\b(diff|difference|differences|vs|compare|comparison|between)\b/;
 const PROG_RE = /\b(program|write|code|implement|polyfill|output|print|find|reverse|count|check|sort|remove|build)\b/;
 
@@ -103,6 +104,8 @@ export function createSearch(items) {
       }
 
       if (it.type === "program" && progIntent) s += 25;
+      // "in angular" / "in react" / "mysql" bola ho toh us category ko thoda upar
+      for (const [word, cat] of CAT_HINTS) if (s > 0 && hasPhrase(nq, word) && it.cat === cat) s += 12;
       if (fuzzy.has(it.id)) s += (1 - fuzzy.get(it.id)) * (s > 0 ? 10 : 30);
       return { it, s };
     });

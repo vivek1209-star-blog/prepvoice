@@ -12,7 +12,7 @@ import ReadingSettings from "./components/ReadingSettings.jsx";
 const search = createSearch(QUESTIONS);
 const BY_ID = Object.fromEntries(QUESTIONS.map(q => [q.id, q]));
 const DESKTOP = "(min-width: 1024px)";
-const EXAMPLES = ["callback", "callback vs promise", "reverse string without loop", "nested object", "useEffect", "tell me about yourself"];
+const EXAMPLES = ["tell me about yourself", "angular interceptor", "switchMap vs mergeMap", "nth highest salary", "observable vs promise", "buy gold flow", "reverse string without loop"];
 const NAV = [
   { id: "search", label: "Search", icon: Search },
   { id: "practice", label: "Practice", icon: Target },

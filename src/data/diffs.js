@@ -251,9 +251,6 @@ const { data: users } = await axios.get("/api/users");`, norun: true }),
     "With a library, we call it when we need it, like React. A framework calls our code and gives a fixed structure, like Angular.",
     "Library = hum control karte hain. Framework = woh control karta hai."),
 
-  D("Difference between React and Angular", ["react", "angular"], "react",
-    "React is a UI library with one-way data flow and JSX. Angular is a full framework with TypeScript, two-way binding, built-in routing and dependency injection.",
-    "React = flexible library. Angular = complete framework."),
 
   // ---------- Node / Backend ----------
   D("Difference between PUT and PATCH", ["put", "patch"], "node",

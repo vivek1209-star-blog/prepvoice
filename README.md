@@ -10,7 +10,7 @@ Voice-powered MERN interview prep. Question **bolo ya type karo**, aur sirf wahi
 ## Features
 - **Voice search** (Indian English, `en-IN`) with live text
 - **Smart intent search**: concept vs difference vs program, typo-tolerant ("clouser" → closure)
-- **428 questions**: JavaScript, React, Node/Express/MongoDB, Managerial, resume-based, 69 differences, 102 programs
+- **614 questions**: Angular · RxJS · TypeScript, JavaScript, React, Node/Express/MongoDB, MySQL · Sequelize (with query programs), Augmont · Fintech, Managerial, resume-based, differences, programs
 - Har program: loop + without loop + recursion/reduce/Set tabs, cross-questions with answers, time & space complexity
 - Bolo "reverse string without loop" → seedha without-loop tab khulta hai
 - Har answer mein: bolne layak short English, Hinglish meaning, code, expected output, code explanation
